@@ -9,7 +9,7 @@ Don't you hate this?
 Well, I do! And you should too, since it's generally a bad practice to mix the representation and the logic.
 
 ## The Solution
-Snippets! Create the HTML snippets right where they would appear and snippetize them. You'll get the DOM structure clear from the beginning. And you can also trust [the validator](http://validator.w3.org/)'s results.
+Snippets! Create the HTML snippets right where they would appear, and snippetize them. You'll get the DOM structure clear from the beginning. And you can also trust [the validator](http://validator.w3.org/)'s results.
 ### Let Me Show You How
 
     ...
@@ -29,6 +29,8 @@ Snippets! Create the HTML snippets right where they would appear and snippetize 
     ...
     <ul id="list">
       <li id="listItemSnippet"></li>
+
+### [The Demo](http://jsfiddle.net/7JFy2/)
 
 ## The Requirements
 * [jQuery](http://jquery.com/) (Tested with 1.6, will probably work with older versions too)

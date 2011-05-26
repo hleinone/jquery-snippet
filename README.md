@@ -29,6 +29,7 @@ Snippets! Create the HTML snippets right where they would appear, and snippetize
     ...
     <ul id="list">
       <li id="listItemSnippet"></li>
+    </ul>
 
 ### [The Demo](http://jsfiddle.net/hleinone/teAZE/)
 

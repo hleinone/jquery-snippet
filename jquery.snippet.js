@@ -18,11 +18,11 @@
   $.fn.snippet = function(snippetId) {
     if (typeof snippetId === "undefined") {
       return this.each(function(index, element) {
-        $(element).parent().data($(element).attr("id"), $(element).removeAttr("id"));
+        $(element).parent().data("snippet_" + $(element).attr("id"), $(element).removeAttr("id"));
         $(element).remove();
       });
     } else {
-      return this.data(snippetId).clone(true);
+      return this.data("snippet_" + snippetId).clone(true);
     }
   }
 })(jQuery);

@@ -11,9 +11,9 @@
   /**
    * jQuery.snippet
    * 
-   * Easily create HTML snippets and stores them in the snippet element's
-   * parent element's data by the snippet element's id. Get the snippet
-   * by $("#parent").snippet("snippetId")
+   * Easily create HTML snippets and store them in the snippet element's
+   * parent element by the snippet element's id. Get the snippet by 
+   * $("#parent").snippet("snippetId")
    */
   $.fn.snippet = function(snippetId) {
     if (typeof snippetId === "undefined") {

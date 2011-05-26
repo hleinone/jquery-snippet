@@ -21,7 +21,7 @@ Snippets! Create the HTML snippets right where they would appear, and snippetize
       $("#listItemSnippet").snippet();
       var numbers = [1, 2, 3, 4];
       for (i in numbers) {
-        $("#list").append($("#list").snippet("listItemSnippet").html(numbers[i]));
+        $("#list").append($("#list").snippet("listItemSnippet").text(numbers[i]));
       }
     });
     //]]>
@@ -30,7 +30,7 @@ Snippets! Create the HTML snippets right where they would appear, and snippetize
     <ul id="list">
       <li id="listItemSnippet"></li>
 
-### [The Demo](http://jsfiddle.net/7JFy2/)
+### [The Demo](http://jsfiddle.net/hleinone/teAZE/)
 
 ## The Requirements
 * [jQuery](http://jquery.com/) (Tested with 1.6, will probably work with older versions too)

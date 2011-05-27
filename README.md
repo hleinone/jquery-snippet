@@ -34,6 +34,6 @@ Snippets! Create the HTML snippets right where they would appear, and snippetize
 ### [The Demo](http://jsfiddle.net/hleinone/teAZE/)
 
 ## The Requirements
-* [jQuery](http://jquery.com/) (Tested with 1.6, will probably work with older versions too)
+* [jQuery](http://jquery.com/) 1.3+
 * Your snippet elements have ids
 

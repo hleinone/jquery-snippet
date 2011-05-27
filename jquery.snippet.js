@@ -6,23 +6,27 @@
  *   http://www.opensource.org/licenses/mit-license.php
  *   http://www.gnu.org/licenses/gpl.html
  */
-
 (function($) {
+  var snippets = [];
+
   /**
-   * jQuery.snippet
+   * $.snippet('id')
    * 
-   * Easily create HTML snippets and store them in the snippet element's
-   * parent element by the snippet element's id. Get the snippet by 
-   * $("#parent").snippet("snippetId")
+   * Retrieve the HTML snippet.
    */
-  $.fn.snippet = function(snippetId) {
-    if (typeof snippetId === "undefined") {
-      return this.each(function(index, element) {
-        $(element).parent().data("snippet_" + $(element).attr("id"), $(element).removeAttr("id"));
-        $(element).remove();
-      });
-    } else {
-      return this.data("snippet_" + snippetId).clone(true);
-    }
+  $.snippet = function(snippetId) {
+    return snippets[snippetId].clone();
+  };
+
+  /**
+   * $('selector').snippet()
+   * 
+   * Store the HTML snippets.
+   */
+  $.fn.snippet = function() {
+    return this.each(function(index, element) {
+      snippets[$(element).attr("id")] = $(element).removeAttr("id");
+      $(element).remove();
+    });
   }
 })(jQuery);

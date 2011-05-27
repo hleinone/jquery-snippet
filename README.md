@@ -20,7 +20,7 @@ Snippets! Create the HTML snippets right where they would appear, and snippetize
     $().ready(function() {
       $("#listItemSnippet").snippet();
       var numbers = [1, 2, 3, 4];
-      for (i in numbers) {
+      for (var i = 0; i < numbers.length; i++) {
         $("#list").append($.snippet("listItemSnippet").text(numbers[i]));
       }
     });

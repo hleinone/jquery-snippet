@@ -28,5 +28,5 @@
       snippets[$(element).attr("id")] = $(element).removeAttr("id");
       $(element).remove();
     });
-  }
+  };
 })(jQuery);
